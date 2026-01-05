@@ -1,0 +1,64 @@
+{
+    "name": "sinnbeck/laravel-dom-assertions",
+    "homepage": "https://github.com/sinnbeck/laravel-dom-assertions",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "assertions",
+        "view",
+        "dom",
+        "blade"
+    ],
+    "authors": [
+        {
+            "name": "René Sinnbeck",
+            "email": "rene.sinnbeck@gmail.com",
+            "homepage": "https://sinnbeck.dev",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Sinnbeck\\DomAssertions\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/",
+            "Tests\\Views\\Components\\": "tests/views/components"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sinnbeck\\DomAssertions\\DomAssertionsServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": "^8.0",
+        "ext-dom": "*",
+        "ext-libxml": "*",
+        "illuminate/testing": "^9.0|^10.0|^11.0|^12.0",
+        "symfony/css-selector": "^6.0|^7.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.2",
+        "larastan/larastan": "^2.0|^3.0",
+        "orchestra/testbench": "^7.0|^8.0|^9.0|^10.0",
+        "pestphp/pest": "^1.0|^2.34|^3.7",
+        "phpstan/extension-installer": "^1.2",
+        "phpstan/phpstan-deprecation-rules": "^1.0|^2.0",
+        "phpstan/phpstan-phpunit": "^1.1|^2.0",
+        "vimeo/psalm": "^4.29|^5.22|^6.6"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        },
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
